@@ -1,0 +1,18 @@
+.item {
+	padding: 10px;
+	height: 250px
+}
+
+.centered-icons {
+	display: flex;
+	justify-content: center;
+	padding: 15px;
+}
+
+.red-back {
+	border-width: 1px;
+	border-color: rgb(230, 230, 230);
+	border-style: solid;
+	border-radius: 4px;
+	background-color: rgba(230, 60, 60, 0.9)
+}

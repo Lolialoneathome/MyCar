@@ -1,0 +1,11 @@
+.gray-back {
+	background-color: rgb(242, 242, 242);
+}
+
+.red-back {
+	border-width: 1px;
+	border-color: rgb(230, 230, 230);
+	border-style: solid;
+	border-radius: 4px;
+	background-color: rgba(230, 60, 60, 0.9)
+}

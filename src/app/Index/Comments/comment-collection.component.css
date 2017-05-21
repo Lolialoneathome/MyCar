@@ -1,0 +1,46 @@
+.comment-author-text {
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(84, 84, 84);
+	font-weight: bold;
+	line-height: 1.2;
+	text-align: left;
+	padding: 5px;
+}
+
+.comment-date-text {
+	font-size: 12px;
+	font-family: "Open Sans";
+	color: rgb(84, 84, 84);
+	line-height: 1.2;
+	text-align: left;
+	padding: 5px;
+}
+
+.comment-title-text {
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(84, 84, 84);
+	font-weight: bold;
+	line-height: 1.571;
+	text-align: left;
+	padding: 5px;
+}
+
+.comment-content-text {
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(84, 84, 84);
+	line-height: 1.571;
+	text-align: left;
+	text-overflow: ellipsis;
+}
+
+.show-full-comment {
+	padding: 15px;
+}
+
+.comment-info {
+	height: 150px;
+	overflow: hidden;
+}
