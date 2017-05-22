@@ -4,20 +4,20 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 
-import { SpecialComponent } from './buy/Special/special.component';
-import { SpecialCollectionComponent } from './buy/Special/special-collection.component';
-import { OrderComponent } from './buy/Order/order.component';
-import { StockComponent } from './buy/Stock/stock.component';
+import { SpecialComponent } from './Buy/Special/special.component';
+import { SpecialCollectionComponent } from './Buy/Special/special-collection.component';
+import { OrderComponent } from './Buy/Order/order.component';
+import { StockComponent } from './Buy/Stock/stock.component';
 
-import { FastSellComponent } from './sell/FastSell/fast-sell.component';
-import { ComissionSellComponent } from './sell/ComissionSell/comission-sell.component';
+import { FastSellComponent } from './Sell/FastSell/fast-sell.component';
+import { ComissionSellComponent } from './Sell/ComissionSell/comission-sell.component';
 
-import { IndexComponent } from './index/index.component';
-import { OnlineServiceComponent } from './index/OnlineServices/online-service.component';
-import { StaticIndexItemComponent } from './index/StaticIndexItem/static-index-item.component';
-import { RedLineTitleComponent } from './titles/red-line-title.component';
-import { BestSellersCollectionComponent } from './index/BestSellers/best-sellers-collection.component';
-import { CommentCollectionComponent } from './index/Comments/comments-collection.component';
+import { IndexComponent } from './Index/index.component';
+import { OnlineServiceComponent } from './Index/OnlineServices/online-service.component';
+import { StaticIndexItemComponent } from './Index/StaticIndexItem/static-index-item.component';
+import { RedLineTitleComponent } from './Titles/red-line-title.component';
+import { BestSellersCollectionComponent } from './Index/BestSellers/best-sellers-collection.component';
+import { CommentCollectionComponent } from './Index/Comments/comments-collection.component';
 import { TradeInComponent } from './AppServices/TradeIn/trade-in.component';
 import { ValuationComponent } from './AppServices/Valuation/valuation.component';
 

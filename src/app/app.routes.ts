@@ -5,12 +5,12 @@
 // import { provideRouter, RouterConfig } from '@angular/router';
 import { ModuleWithProviders }  from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { IndexComponent } from './index/index.component';
-import { SpecialComponent } from './buy/Special/special.component';
-import { OrderComponent } from './buy/Order/order.component';
-import { StockComponent } from './buy/Stock/stock.component';
-import { FastSellComponent } from './sell/FastSell/fast-sell.component';
-import { ComissionSellComponent } from './sell/ComissionSell/comission-sell.component';
+import { IndexComponent } from './Index/index.component';
+import { SpecialComponent } from './Buy/Special/special.component';
+import { OrderComponent } from './Buy/Order/order.component';
+import { StockComponent } from './Buy/Stock/stock.component';
+import { FastSellComponent } from './Sell/FastSell/fast-sell.component';
+import { ComissionSellComponent } from './Sell/ComissionSell/comission-sell.component';
 import { TradeInComponent } from './AppServices/TradeIn/trade-in.component';
 import { ValuationComponent } from './AppServices/Valuation/valuation.component';
 import { AboutUsComponent } from './About/Info/about-us.component';
