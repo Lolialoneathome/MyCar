@@ -38,6 +38,6 @@ export class AppComponent implements OnInit {
      constructor(public router: Router) {}
 
      ngOnInit(): void {
-       this.router.navigateByUrl('/sell_fast');
+       this.router.navigateByUrl('/index');
      }
 }
