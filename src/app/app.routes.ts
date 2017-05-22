@@ -30,6 +30,7 @@ export const routes: Routes = [
   { path: 'contacts', component: ContactsComponent },
   { path: 'contacts', component: ContactsComponent },
   { path: 'employes', component: EmployesComponent },
+  { path: 'index', component: IndexComponent },
 ];
 
 // Deprecated provide
