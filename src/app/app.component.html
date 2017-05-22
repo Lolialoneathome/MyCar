@@ -25,7 +25,7 @@
       <div class="container">
         <ul class="row nav navbar-nav nav-text" (mouseenter) ="mouseEnterDetailedNav('div a') "  (mouseleave) ="mouseLeaveDetailedNav('div A')">
           <li>
-            <a (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
+            <a style="padding-left:15px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
             <div *ngIf="isNavDetailsShow || isNavDetailsHowered">
               <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
               <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_special']"> Специальное предложения </a> </li>
@@ -35,7 +35,7 @@
             </div>
           </li>
         <li>
-          <a (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Продать автомобиль</a>
+          <a style="padding-left:10px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Продать автомобиль</a>
           <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
             <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
             <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/sell_fast']"> Быстрая продажа </a> </li>
