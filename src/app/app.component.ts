@@ -11,8 +11,8 @@ import {Router} from '@angular/router';
 })
 export class AppComponent implements OnInit {
 
-  private isNavDetailsShow: boolean = false;
-  private isNavDetailsHowered = false;
+  public isNavDetailsShow: boolean = false;
+  public isNavDetailsHowered = false;
   mouseEnter(div : string){
         console.log("mouse enter : " + div);
         this.isNavDetailsShow = true;
