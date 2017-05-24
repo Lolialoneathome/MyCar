@@ -6,6 +6,7 @@ import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
     selector: 'special-collection',
     styleUrls: ['special-collection.component.css'],
     template: `
+      <div class="container combined-components">
         <div *ngFor="let special of specials">
           <div class="row row-item">
           <div class="bordered">
@@ -29,6 +30,7 @@ import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
           </div>
           </div>
         </div>
+      </div>
     `,
     providers: [SpecialItemService]
 })
