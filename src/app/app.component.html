@@ -26,8 +26,8 @@
     </div>
       <div class="container">
         <ul class="row nav navbar-nav nav-text" style="cursor: pointer" (mouseenter) ="mouseEnterDetailedNav('div a') "  (mouseleave) ="mouseLeaveDetailedNav('div A')">
-          <li>
-            <a (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
+          <li >
+            <a style="padding-right:60px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
             <div *ngIf="isNavDetailsShow || isNavDetailsHowered">
               <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
               <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_special']"> Специальное предложения </a> </li>
@@ -37,7 +37,7 @@
             </div>
           </li>
         <li>
-          <a  (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Продать автомобиль</a>
+          <a  style="padding-right:50px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Продать автомобиль</a>
           <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
             <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
             <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/sell_fast']"> Быстрая продажа </a> </li>
@@ -45,8 +45,8 @@
             </ul>
           </div>
         </li>
-        <li class="text-center">
-          <a (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Услуги</a>
+        <li>
+          <a style="padding-right:50px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Услуги</a>
           <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
             <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
             <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/tradein']"> Trade-In </a> </li>
