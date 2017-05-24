@@ -32,15 +32,30 @@ import { Component, Input, OnInit  } from '@angular/core';
           </a>
        </div>
        <!-- /#homepage-feature.carousel -->
-       <div class="red">
+
+        <div class="red">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-4 red-content">
+                <div class="header1">TOYOTA CAMRY</div>
+                <div style="padding-top:25px; padding-bottom:25px">Весенние скидки до 100 000 рублей</div>
+                <div>
+                  <p><a class="btn btn-primary btn-custom-red  btn-primary-custom-red" style="padding-right: 25px; padding-left: 25px;" href="#" role="button">Подробнее</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       <!--<div class="red">
          <div class="red-content">
            <div class="header1">TOYOTA CAMRY</div>
            <div style="padding-top:25px; padding-bottom:25px">Весенние скидки до 100 000 рублей</div>
            <div class="jum-button">
-             <p><a class="btn btn-primary btn-custom-red  btn-primary-custom-red btn-lg" href="#" role="button">Подробнее</a></p>
+             <p><a class="btn btn-primary btn-custom-red  btn-primary-custom-red" style="padding-right: 25px; padding-left: 25px;" href="#" role="button">Подробнее</a></p>
            </div>
          </div>
-       </div>
+       </div> -->
 
     </div>
     <!-- /.container.slide-wrapper -->
