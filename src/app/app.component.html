@@ -2,8 +2,8 @@
 
 
     <div class="navbar navbar-default navbar-fixed-top">
-      <div style="background-color: white;">
-      <div class="container" >
+      <div style="background-color: white; ">
+      <div class="container hideOnSmallScreen" >
         <div class="row">
           <nav class="navbar">
             <div class="navbar-header">
@@ -25,46 +25,76 @@
       </div>
     </div>
       <div class="container">
-        <ul class="row nav navbar-nav nav-text" style="cursor: pointer" (mouseenter) ="mouseEnterDetailedNav('div a') "  (mouseleave) ="mouseLeaveDetailedNav('div A')">
-          <li >
-            <a style="padding-right:60px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
-            <div *ngIf="isNavDetailsShow || isNavDetailsHowered">
-              <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
-              <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_special']"> Специальное предложения </a> </li>
-              <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_stock']"> Автомобили в наличии </a> </li>
-              <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_order']"> Автомобили на заказ  </a> </li>
-              </ul>
+          <nav class="navbar hideOnLargeScreen">
+            <div class="navbar-header">
+              <a class="navbar-brand no-padding" [routerLink]="['/index']">
+                <span><img  class="logo-img" src="assets/images/logo.png"/></span>
+              </a>
             </div>
-          </li>
-        <li>
-          <a  style="padding-right:50px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Продать автомобиль</a>
-          <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
-            <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
-            <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/sell_fast']"> Быстрая продажа </a> </li>
-            <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/sell_com']"> Комиссионная продажа </a> </li>
+            <ul class="nav navbar-nav navbar-right border-right border-left">
+              <li class="border-right">
+                <div class="search-but">
+                  <img src="assets/images/search.png" alt="search icon"/>
+                </div>
+            </li>
+              <li>
+                <div class="search-but">
+                  <img src="assets/images/phone.png" alt="phone icon"/>
+                </div>
+              </li>
+              <li>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#top_navbar" aria-expanded="false" aria-controls="navbar">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="top_navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav nav-text" style="cursor: pointer" (mouseenter) ="mouseEnterDetailedNav('div a') "  (mouseleave) ="mouseLeaveDetailedNav('div A')">
+              <li >
+                <a style="padding-right:60px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
+                <div *ngIf="isNavDetailsShow || isNavDetailsHowered">
+                  <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
+                  <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_special']"> Специальное предложения </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_stock']"> Автомобили в наличии </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/buy_order']"> Автомобили на заказ  </a> </li>
+                  </ul>
+                </div>
+              </li>
+            <li>
+              <a  style="padding-right:50px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Продать автомобиль</a>
+              <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
+                <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
+                <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/sell_fast']"> Быстрая продажа </a> </li>
+                <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/sell_com']"> Комиссионная продажа </a> </li>
+                </ul>
+              </div>
+            </li>
+            <li>
+              <a style="padding-right:50px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Услуги</a>
+              <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
+                <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
+                <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/tradein']"> Trade-In </a> </li>
+                <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/valuation']"> Оценка стоимости </a> </li>
+                </ul>
+              </div>
+            </li>
+            <li >
+              <a (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">О компании</a>
+              <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
+                <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
+                <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/contacts']"> Контакты </a> </li>
+                <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/employes']"> Наши сотрудники </a> </li>
+                <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/aboutus']"> О нас </a> </li>
+                </ul>
+              </div>
+            </li>
             </ul>
           </div>
-        </li>
-        <li>
-          <a style="padding-right:50px" (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">Услуги</a>
-          <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
-            <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
-            <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/tradein']"> Trade-In </a> </li>
-            <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/valuation']"> Оценка стоимости </a> </li>
-            </ul>
-          </div>
-        </li>
-        <li >
-          <a (mouseenter) ="mouseEnter('div a') " (mouseleave) ="mouseLeave('div A')">О компании</a>
-          <div *ngIf="isNavDetailsShow || isNavDetailsHowered" >
-            <ul class="btn-group-vertical nav navbar-nav nav-text" role="group" aria-label="...">
-            <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/contacts']"> Контакты </a> </li>
-            <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/employes']"> Наши сотрудники </a> </li>
-            <li class="btn-group btn-group-xs" role="group"> <a style="padding-top: 0px" [routerLink]="['/aboutus']"> О нас </a> </li>
-            </ul>
-          </div>
-        </li>
-        </ul>
       </div>
     </div>
    <!-- Router Outlet -->

@@ -4,7 +4,7 @@ import { Component, Input, OnInit  } from '@angular/core';
     styleUrls: ['index.component.css'],
     template: `
 
-    <div class="slide-wrapper">
+    <div class="slide-wrapper hideOnSmallScreen">
 
        <div id="homepage-feature" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">

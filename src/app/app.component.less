@@ -42,9 +42,9 @@ body {
   font-family: "Open Sans";
   color: rgb(84, 84, 84);
   line-height: 1.2;
+  padding: 70px;
 }
 
-body { padding-top: 70px; }
 
 .no-padding {
   padding: 0px;
@@ -229,4 +229,60 @@ body { padding-top: 70px; }
 	border-width: 1px;
 	border-color: rgb(219, 219, 219);
 	border-style: solid;
+}
+
+
+@media screen and (max-width: 680px) {
+  .hideOnSmallScreen {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (min-width: 680px) {
+  .hideOnLargeScreen {
+    visibility: hidden;
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+	.row {
+		position: relative;
+	}
+
+	.navbar-header {
+		left: 0;
+		position: absolute;
+		top: 0;
+	}
+
+	.navbar-brand {
+		box-sizing: border-box;
+		text-align: center;
+		width: 100%;
+	}
+
+	.navbar-right {
+		margin: 0;
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+
+	.navbar-right > li {
+		display: inline-block;
+		margin-top: 4px;
+	}
+}
+
+.navbar-toggle {
+  float: none;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 800px){
+  .navbar-right > li {
+    margin-top: 0px;
+  }
 }
