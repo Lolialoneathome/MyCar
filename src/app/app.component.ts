@@ -19,6 +19,10 @@ export class AppComponent implements OnInit {
   public isAboutVisible = false;
   mouseEnter(div : string){
         console.log("mouse enter : " + div);
+        this.isBuyVisible = false;
+        this.isSellVisible = false;
+        this.isServicesVisible = false;
+        this.isAboutVisible = false;
         this.isNavDetailsShow = true;
         switch (div)
         {
@@ -38,7 +42,6 @@ export class AppComponent implements OnInit {
      }
 
      mouseLeave(div : string){
-
      }
 
      mouseEnterDetailedNav(div : string){
