@@ -19,8 +19,8 @@ export class StaticIndexItemComponent {
   @Input() text: string;
   @Input() imagePathDisable: string;
   @Input() imagePathActive: string;
-  private imagePath : string;
-  private headerCssClass : string = "header2";
+  public imagePath : string;
+  public headerCssClass : string = "header2";
   public cssClass: string = "white-back";
 
   mouseEnter() {
