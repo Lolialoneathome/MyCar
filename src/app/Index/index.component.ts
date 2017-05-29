@@ -70,22 +70,22 @@ import { Component, Input, OnInit  } from '@angular/core';
     <div class="container">
 
       <div class="row" style="margin-top: 0px">
-        <div class="col-md-4" style="padding-top:30px">
-          <div class="header1">on-line услуги</div>
+        <div class="col-md-4 col-sm-12" style="padding-top:30px">
+          <div class="header1 resp-text-center">on-line услуги</div>
         </div>
-        <div class="col-md-2 border-right text-center">
+        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center">
           <online-service-component [text]="'Поиск автомобиля'" [imagePath]="'assets/images/search-auto-icon.png'">
           </online-service-component>
         </div>
-        <div class="col-md-2 border-right text-center">
+        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center">
         <online-service-component [text]="'Оценка автомобиля'" [imagePath]="'assets/images/rating-icon.png'">
         </online-service-component>
         </div>
-        <div class="col-md-2 border-right text-center">
+        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center">
         <online-service-component [text]="'Обмен автомобиля'" [imagePath]="'assets/images/swap-auto-icon.png'">
         </online-service-component>
         </div>
-        <div class="col-md-2 text-center">
+        <div class="col-md-2 col-sm-6 col-xs-6 hide-border-on-small text-center">
         <online-service-component [text]="'Обратная связь'" [imagePath]="'assets/images/feedback-icon.png'">
         </online-service-component>
         </div>

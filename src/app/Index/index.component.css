@@ -12,5 +12,15 @@
 
 .jum-button {
 
-  
+
+}
+
+@media screen and (max-width: 1024px) {
+  .hide-border-on-small {
+  	border: none;
+  }
+
+  .resp-text-center {
+    text-align: center;
+  }
 }
