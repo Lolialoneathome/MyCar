@@ -14,6 +14,7 @@ import { ComissionSellComponent } from './Sell/ComissionSell/comission-sell.comp
 
 import { IndexComponent } from './Index/index.component';
 import { OnlineServiceComponent } from './Index/OnlineServices/online-service.component';
+import { StaticIndexItemCollection } from './Index/StaticIndexItem/static-index-items-collection';
 import { StaticIndexItemComponent } from './Index/StaticIndexItem/static-index-item.component';
 import { RedLineTitleComponent } from './Titles/red-line-title.component';
 import { BestSellersCollectionComponent } from './Index/BestSellers/best-sellers-collection.component';
@@ -39,6 +40,7 @@ import { AppComponent } from './app.component';
     IndexComponent,
     RedLineTitleComponent,
     OnlineServiceComponent,
+    StaticIndexItemCollection,
     StaticIndexItemComponent,
     BestSellersCollectionComponent,
     CommentCollectionComponent,

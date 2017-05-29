@@ -7,29 +7,32 @@ import { CarService  } from '../../Car/car.service';
     styleUrls: ['best-sellers-collection.component.css'],
     template: `
       <div class="row">
-        <div class="col-md-3" *ngFor="let car of cars">
-          <div class="bordered">
-            <img class="img-responsive" [src]=car.image alt="no icon"/>
-            <div class="product-description">
+        <div class="col-md-3 col-sm-12 col-xs-12" *ngFor="let car of cars">
+          <img class="img-responsive car-img" [src]=car.image alt="no icon"/>
+          <ul class="list-group bordered">
+            <li  class="list-group-item">
               <div class="product-name-text">{{car.name}}</div>
+              </li>
+              <li  class="list-group-item">
               <div class="product-price-text">{{car.price}} <span class='rouble'>a</span></div>
+              </li>
+              <li  class="list-group-item">
               <div class="product-detailed"> {{car.description }} </div>
-              <div class="input-group">
-									<div class="product-button product-button-text"> <span class='rouble'>a </span> Купить </div>
-									<div class="product-button product-button-text"> | </div>
+              </li>
+              <li  class="list-group-item">
+                <table style="width: 100%">
+                  <tr>
+                  <td style="width: 50%; text-align: center; border-right: 1px solid;">
+                    <span class='rouble'> a </span> Купить
+                  </td>
+                  <td style="width: 50%; text-align: center">
+                    <img src="assets/images/doc_icon.png" style="vertical-align: middle; height: 100%" alt="@l!"/> Подробнее
+                  </td>
+                  </tr>
+                </table>
+            </li>
+          </ul>
 
-                  <div class="media">
-                   <div class="media-left media-top">
-                    <img src="assets/images/doc_icon.png" style="padding: 4px" alt="@l!" class="media-object"/>
-                    </div>
-                   <div class="media-body">
-                      <span class="media-heading product-button-text">Подробнее</span>
-                   </div>
-                </div>
-								</div>
-
-            </div>
-          </div>
         </div>
       </div>
     `,

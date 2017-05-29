@@ -14,5 +14,19 @@
 	border-color: rgb(230, 230, 230);
 	border-style: solid;
 	border-radius: 4px;
-	background-color: rgba(230, 60, 60, 0.9)
+	background-color: rgba(230, 60, 60, 0.9);
+  color: white;
+}
+
+.white-back {
+	background-color: rgb(255, 255, 255);
+}
+
+.header2-white {
+  font-size: 14px;
+  font-family: "BMW Type Global Pro";
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
 }

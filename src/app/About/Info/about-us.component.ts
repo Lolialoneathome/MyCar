@@ -33,15 +33,15 @@ import { Component  } from '@angular/core';
           <div class="container">
             <div class="row">
               <div class="col-md-4">
-                <static-index-item-component [cssClass]="'white-back bordered'" [title]="'Комфортная цена'" [text]="'Пример разного всякого текста'" [imagePath]="'assets/images/comf_price.png'" >
+                <static-index-item-component  [title]="'Комфортная цена'" [text]="'Пример разного всякого текста'" [imagePathDisable]="'assets/images/comf_price.png'" >
                 </static-index-item-component>
               </div>
               <div class="col-md-4">
-                <static-index-item-component [cssClass]="'red-back'" [title]="'Гарантия качества'" [text]="'Пример разного всякого текста'" [imagePath]="'assets/images/garantee.png'" >
+                <static-index-item-component  [title]="'Гарантия качества'" [text]="'Пример разного всякого текста'" [imagePathDisable]="'assets/images/garantee.png'" >
                 </static-index-item-component>
               </div>
               <div class="col-md-4">
-                <static-index-item-component [cssClass]="'white-back bordered'"  [title]="'Безопасность'" [text]="'Пример разного всякого текста'" [imagePath]="'assets/images/security.png'" >
+                <static-index-item-component   [title]="'Безопасность'" [text]="'Пример разного всякого текста'" [imagePathDisable]="'assets/images/security.png'" >
                 </static-index-item-component>
               </div>
             </div>

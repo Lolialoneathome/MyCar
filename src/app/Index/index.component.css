@@ -7,7 +7,8 @@
 	border-color: rgb(230, 230, 230);
 	border-style: solid;
 	border-radius: 4px;
-	background-color: rgba(230, 60, 60, 0.9)
+	background-color: rgba(230, 60, 60, 0.9);
+  color: white;
 }
 
 .jum-button {
@@ -23,4 +24,14 @@
   .resp-text-center {
     text-align: center;
   }
+}
+
+
+.btn-lg-custom {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
 }

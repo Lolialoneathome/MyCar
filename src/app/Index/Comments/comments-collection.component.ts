@@ -14,10 +14,10 @@ import { CommentService  } from '../../Comments/comment.service';
          <div class="comment-content-text"> {{comment.text}} </div>
        </div>
        <div class="show-full-comment text-center">
-         <p><a class="btn btn-primary" href="#" role="button">Читать полностью</a></p>
+         <p><a class="btn btn-gray" href="#" role="button">Читать полностью</a></p>
        </div>
         </div>
-      
+
     `,
     providers: [CommentService]
 })
