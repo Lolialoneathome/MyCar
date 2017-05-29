@@ -6,16 +6,20 @@ import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
     selector: 'special-collection',
     styleUrls: ['special-collection.component.css'],
     template: `
+    <div class="jumbotron">
+
+    </div>
       <div class="container combined-components">
-        <div *ngFor="let special of specials">
-          <div class="row row-item">
-          <div class="bordered">
-            <div class="col-md-12 bordered">
+        <red-line-title [text]="'Специальные предложения'"></red-line-title>
+        <div style="padding: 15px" *ngFor="let special of specials">
+          <div class="row bordered" style="padding: 0px">
+          <div class="">
+            <div class="col-md-12 no-padding">
               <img class="img-responsive pull-left" style="padding-right: 30px" [src]=special.image alt="no icon"/>
-              <div style="padding:50px">
-                <div>{{special.title}}</div>
-                <div>{{special.description}} <span class='rouble'>a</span></div>
-                <div class="input-group">
+              <div>
+                <div class="header3" style="padding-top: 2%">{{special.title}}</div>
+                <div style="padding-top: 2%">{{special.description}} <span class='rouble'>a</span></div>
+                <div class="input-group"style="padding-top: 5%">
                     <div class="media">
                      <div class="media-left media-top">
                       <img src="assets/images/doc_icon.png" style="padding: 4px" alt="@l!" class="media-object"/>
