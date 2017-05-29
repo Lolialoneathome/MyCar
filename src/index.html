@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>MyCar</title>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script
   src="https://code.jquery.com/jquery-3.2.1.min.js"
   integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
@@ -23,11 +25,14 @@
 
 
   <base href="/">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
   <app-root>Loading...</app-root>
+  <script>
+    $(document).ready(function() {
+       $('.selectpicker').selectpicker();
+    });
+  </script>
 </body>
 </html>
