@@ -20,8 +20,9 @@ import { CarService  } from '../../Car/car.service';
               <div class="product-detailed"> {{car.description }} </div>
               </li>
               <li  class="list-group-item">
-                <ul class="list-inline">
-                    <li style="width: 50%; text-align: center; border-right: 1px solid;"><span class='rouble media-middle'> a </span> <span class="media-middle"> Купить </span></li>
+                <ul class="list-inline" style="display: flex;justify-content: space-around;">
+                    <li><span class='rouble media-middle'> a </span> <span class="media-middle">Купить </span></li>
+                    <li style="text-align: center; border-right: 1px solid;"></li>
                     <li style="vertical-align: middle"><div class="media" style="text-align: center; margin: auto;">
                        <div class="media-left media-top" style="padding: 3px">
                         <img src="assets/images/doc_icon.png" alt="@l!" class="media-object"/>
