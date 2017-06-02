@@ -70,3 +70,17 @@
 .padding-top-25 {
   padding-top: 25px;
 }
+
+.padding-left-0 {
+	padding-left: 0px;
+}
+
+.form-control + .glyphicon {
+    position: absolute;
+    right: 0;
+    padding: 8px 27px;
+}
+
+.form-control {
+    border:1px solid red;
+}

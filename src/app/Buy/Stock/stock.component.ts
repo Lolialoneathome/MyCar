@@ -24,17 +24,15 @@ declare var jQuery: any;
 			</div>
 
       <div class="row padding-top-25">
-				<div class="input-group padding-top-25">
-				      <input type="text" class="form-control" placeholder="Поиск автомобиля">
-				      <span class="input-group-btn">
-				        <button class="btn btn-custom-red btn-default" type="button">Go!</button>
-				      </span>
-				    </div>
+        <div class="col-md-12 padding-left-0">
+          <input class="form-control" type="search" placeholder="Поиск автомобиля" />
+          <span class="glyphicon glyphicon-search"></span>
+        </div>
 			</div>
 
       <div class="row padding-top-25">
 
-					<div class="col-md-2">
+					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
 							<select class="selectpicker form-control" multiple title="Марка">
 									<option>Mustard</option>
@@ -44,7 +42,7 @@ declare var jQuery: any;
 						</div>
 					</div>
 
-					<div class="col-md-2">
+					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
 				      <select class="selectpicker form-control" multiple title="Модель">
 									<option>Mustard</option>
@@ -54,7 +52,7 @@ declare var jQuery: any;
 				    </div>
 					</div>
 
-					<div class="col-md-2">
+					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
 				      <select class="selectpicker form-control" multiple title="Стоимость">
 									<option>Mustard</option>
@@ -64,7 +62,7 @@ declare var jQuery: any;
 				    </div>
 					</div>
 
-					<div class="col-md-2">
+					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
 				      <select class="selectpicker form-control" multiple title="Год выпуска">
 									<option>Mustard</option>
@@ -74,7 +72,7 @@ declare var jQuery: any;
 				    </div>
 					</div>
 
-					<div class="col-md-2">
+					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
 				      <select class="selectpicker form-control" multiple title="Коробка передач">
 									<option>Mustard</option>
@@ -84,7 +82,7 @@ declare var jQuery: any;
 				    </div>
 					</div>
 
-					<div class="col-md-2">
+					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
 							<select class="selectpicker form-control" multiple title="Привод">
 									<option>Mustard</option>
@@ -96,7 +94,7 @@ declare var jQuery: any;
 				</div>
 
       <div class="row padding-top-25">
-      <div class="col-md-3 col-sm-12 col-xs-12" *ngFor="let car of cars">
+      <div class="col-md-3 col-sm-12 col-xs-12 padding-left-0" *ngFor="let car of cars">
         <img class="img-responsive car-img" [src]=car.image alt="no icon"/>
         <ul class="list-group bordered">
           <li  class="list-group-item">
