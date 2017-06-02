@@ -58,6 +58,12 @@
   z-index: 1;
 }
 
+.btn-gray:hower {
+  background-color: rgb(242, 242, 242);
+  color: rgb(84, 84, 84);
+  z-index: 1;
+}
+
 .show-full-comment {
 	padding: 15px;
 }

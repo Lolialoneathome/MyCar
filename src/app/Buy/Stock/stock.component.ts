@@ -20,7 +20,14 @@ declare var jQuery: any;
       </div>
 
       <div class="row text-center padding-top-25">
-					<p><a class="btn btn-custom-red btn-primary btn-primary-custom-red btn-lg" href="#" role="button">Оставить заявку</a></p>
+      <div [routerLink]="['/buy_order']" class="media btn btn-gray" style="text-align: center; margin: auto;">
+       <div class="media-left media-top" style="padding: 3px; border-right: 1px, solid, gray">
+        <img src="assets/images/pen.png" alt="@l!" class="media-object"/>
+        </div>
+       <div class="media-body" style="width: auto; padding-left: 10px">
+          <span class="media-heading product-button-text media-middle">Оставить заявку</span>
+       </div>
+      </div>
 			</div>
 
       <div class="row padding-top-25">

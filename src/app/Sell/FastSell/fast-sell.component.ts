@@ -2,7 +2,11 @@ import { Component  } from '@angular/core';
 
 @Component({
     selector: 'fast-sell-component',
+    styleUrls: ['fast-sell.component.css'],
     template: `
+    <div class="jumbotron">
+
+    </div>
     <div class="container combined-components">
       <div class="row">
         <red-line-title [text]="'Быстрая продажа'"></red-line-title>
@@ -20,7 +24,7 @@ import { Component  } from '@angular/core';
       <div class="row">
         <div class="header1 text-center">Заявка на быструю продажу</div>
       </div>
-      <ticket-form-component>
+      <ticket-form-component [isPhoto]="true">
       </ticket-form-component>
     </div>
     `
