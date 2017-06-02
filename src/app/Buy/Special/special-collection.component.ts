@@ -13,10 +13,11 @@ import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
         <red-line-title [text]="'Специальные предложения'"></red-line-title>
         <div style="padding: 15px" *ngFor="let special of specials">
           <div class="row bordered" style="padding: 0px">
-          <div class="">
-            <div class="col-md-12 no-padding">
-              <img class="img-responsive pull-left" style="padding-right: 30px" [src]=special.image alt="no icon"/>
-              <div>
+            <div class="col-md-3 col-xs-12  no-padding">
+              <img class="img-responsive pull-left-on-big pull-center-on-small" [src]=special.image alt="no icon"/>
+            </div>
+            <div class="col-md-9 col-xs-12">
+              <div class="pull-center-on-small">
                 <div class="header3" style="padding-top: 2%">{{special.title}}</div>
                 <div style="padding-top: 2%">{{special.description}} <span class='rouble'>a</span></div>
                 <div class="input-group"style="padding-top: 5%">
@@ -31,7 +32,7 @@ import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
   							</div>
               </div>
             </div>
-          </div>
+          <div>
           </div>
         </div>
       </div>

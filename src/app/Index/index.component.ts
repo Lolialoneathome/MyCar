@@ -69,24 +69,24 @@ import { Component, Input, OnInit  } from '@angular/core';
 
     <div class="container">
 
-      <div class="row" style="margin-top: 0px">
-        <div class="col-md-4 col-sm-12" style="padding-top:30px">
+      <div class="row row-flex row-flex-wrap" style="margin-top: 0px">
+        <div class="col-md-4 col-sm-12 col-xs-12">
           <div class="header1 resp-text-center">on-line услуги</div>
         </div>
-        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center">
-          <online-service-component [routerLink]="['/buy_stock']" [text]="'Поиск автомобиля'" [imagePath]="'assets/images/search-auto-icon.png'">
+        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
+          <online-service-component class="cursior-pointer" [routerLink]="['/buy_stock']" [text]="'Поиск автомобиля'" [imagePath]="'assets/images/search-auto-icon.png'">
           </online-service-component>
         </div>
-        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center">
-        <online-service-component [routerLink]="['/valuation']" [text]="'Оценка автомобиля'" [imagePath]="'assets/images/rating-icon.png'">
+        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
+        <online-service-component class="cursior-pointer" [routerLink]="['/valuation']" [text]="'Оценка автомобиля'" [imagePath]="'assets/images/rating-icon.png'">
         </online-service-component>
         </div>
-        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center">
-        <online-service-component [routerLink]="['/tradein']" [text]="'Обмен автомобиля'" [imagePath]="'assets/images/swap-auto-icon.png'">
+        <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
+        <online-service-component class="cursior-pointer" [routerLink]="['/tradein']" [text]="'Обмен автомобиля'" [imagePath]="'assets/images/swap-auto-icon.png'">
         </online-service-component>
         </div>
-        <div class="col-md-2 col-sm-6 col-xs-6 hide-border-on-small text-center">
-        <online-service-component [text]="'Обратная связь'" [imagePath]="'assets/images/feedback-icon.png'">
+        <div class="col-md-2 col-sm-6 col-xs-6 hide-border-on-small text-center ">
+        <online-service-component class="cursior-pointer" [text]="'Обратная связь'" [imagePath]="'assets/images/feedback-icon.png'">
         </online-service-component>
         </div>
       </div>

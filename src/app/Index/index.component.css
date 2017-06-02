@@ -35,3 +35,31 @@
   white-space: nowrap;
   vertical-align: middle;
 }
+
+@media screen and (min-width: 1024px) {
+
+.row-flex, .row-flex > div[class*='col-md'] {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+		align-items: center;
+		justify-content: center;
+}
+
+.row-flex-wrap {
+	-webkit-flex-flow: row wrap;
+    align-content: flex-start;
+    flex:0;
+}
+
+.row-flex > div[class*='col-'] {
+	 margin:-.2px; /* hack adjust for wrapping */
+}
+}
+
+.cursior-pointer {
+	  cursor: pointer;
+}

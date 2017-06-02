@@ -22,3 +22,16 @@ background-position: center;
 .no-padding {
   padding: 0px;
 }
+
+.pull-left-on-big {
+  float: left;
+  padding-right: 30px
+}
+@media screen and (max-width: 760px) {
+  .pull-center-on-small {
+  	float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 3px;
+  }
+}

@@ -20,7 +20,6 @@ export class AppComponent implements OnInit {
   public isServicesVisible = false;
   public isAboutVisible = false;
   mouseEnter(div : string){
-        console.log("mouse enter : " + div);
         this.isBuyVisible = false;
         this.isSellVisible = false;
         this.isServicesVisible = false;
@@ -59,6 +58,7 @@ export class AppComponent implements OnInit {
        this.isSellVisible = false;
        this.isServicesVisible = false;
        this.isAboutVisible = false;
+       console.log("mouse leave : " + div);
      }
 
      constructor(public router: Router) {}

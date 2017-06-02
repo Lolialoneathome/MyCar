@@ -20,16 +20,17 @@ import { CarService  } from '../../Car/car.service';
               <div class="product-detailed"> {{car.description }} </div>
               </li>
               <li  class="list-group-item">
-                <table style="width: 100%">
-                  <tr>
-                  <td style="width: 50%; text-align: center; border-right: 1px solid;">
-                    <span class='rouble'> a </span> Купить
-                  </td>
-                  <td style="width: 50%; text-align: center">
-                    <img src="assets/images/doc_icon.png" style="vertical-align: middle; height: 100%" alt="@l!"/> <span class="media-middle"> Подробнее </span>
-                  </td>
-                  </tr>
-                </table>
+                <ul class="list-inline">
+                    <li style="width: 50%; text-align: center; border-right: 1px solid;"><span class='rouble media-middle'> a </span> <span class="media-middle"> Купить </span></li>
+                    <li style="vertical-align: middle"><div class="media" style="text-align: center; margin: auto;">
+                       <div class="media-left media-top" style="padding: 3px">
+                        <img src="assets/images/doc_icon.png" alt="@l!" class="media-object"/>
+                        </div>
+                       <div class="media-body" style="width: auto; padding-left: 3px">
+                          <span class="media-heading product-button-text media-middle">Подробнее</span>
+                       </div>
+                     </div></li>
+                </ul>
             </li>
           </ul>
 
