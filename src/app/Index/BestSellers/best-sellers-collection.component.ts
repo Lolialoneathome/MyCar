@@ -26,7 +26,7 @@ import { CarService  } from '../../Car/car.service';
                     <span class='rouble'> a </span> Купить
                   </td>
                   <td style="width: 50%; text-align: center">
-                    <img src="assets/images/doc_icon.png" style="vertical-align: middle; height: 100%" alt="@l!"/> Подробнее
+                    <img src="assets/images/doc_icon.png" style="vertical-align: middle; height: 100%" alt="@l!"/> <span class="media-middle"> Подробнее </span>
                   </td>
                   </tr>
                 </table>

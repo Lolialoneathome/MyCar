@@ -22,10 +22,10 @@ import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
                 <div class="input-group"style="padding-top: 5%">
                     <div class="media">
                      <div class="media-left media-top">
-                      <img src="assets/images/doc_icon.png" style="padding: 4px" alt="@l!" class="media-object"/>
+                      <img src="assets/images/doc_icon.png" style="padding: 3px" alt="@l!" class="media-object"/>
                       </div>
                      <div class="media-body">
-                        <span class="media-heading product-button-text">Подробнее</span>
+                        <span class="media-heading product-button-text media-middle">Подробнее</span>
                      </div>
                   </div>
   							</div>
