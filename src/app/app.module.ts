@@ -25,6 +25,7 @@ import { ValuationComponent } from './AppServices/Valuation/valuation.component'
 import { AboutUsComponent } from './About/Info/about-us.component';
 import { ContactsComponent } from './About/Contacts/contacts.component';
 import { EmployesComponent } from './About/Employees/employes.component';
+import {NewsCollectionComponent} from './About/News/news-collection.component';
 
 import { TicketFormComponent } from './Ticket/ticket-form.component';
 import { TicketFormTradeinComponent } from './Ticket/ticket-form-tradein.component';
@@ -56,7 +57,8 @@ import { AppComponent } from './app.component';
     ValuationComponent,
     AboutUsComponent,
     ContactsComponent,
-    EmployesComponent
+    EmployesComponent,
+    NewsCollectionComponent
   ],
   imports: [
     BrowserModule,

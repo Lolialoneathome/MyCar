@@ -1,0 +1,37 @@
+.row-item {
+  padding: 30px;
+}
+
+.bordered {
+  border-width: 1px;
+  border-color: rgb(219, 219, 219);
+  border-style: solid;
+}
+
+.jumbotron {
+background-image: url("../../../assets/images/special-jum.jpg");
+background-size: cover;
+height: 100%;
+margin-bottom: 0;
+min-height: 500px;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+}
+
+.no-padding {
+  padding: 0px;
+}
+
+.pull-left-on-big {
+  float: left;
+  padding-right: 30px
+}
+@media screen and (max-width: 760px) {
+  .pull-center-on-small {
+  	float: none;
+    width: 100%;
+    padding-right: 0px;
+    padding-bottom: 3px;
+  }
+}

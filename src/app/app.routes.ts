@@ -16,6 +16,7 @@ import { ValuationComponent } from './AppServices/Valuation/valuation.component'
 import { AboutUsComponent } from './About/Info/about-us.component';
 import { ContactsComponent } from './About/Contacts/contacts.component';
 import { EmployesComponent } from './About/Employees/employes.component';
+import {NewsCollectionComponent} from './About/News/news-collection.component';
 
 // Route Configuration
 export const routes: Routes = [
@@ -31,6 +32,7 @@ export const routes: Routes = [
   { path: 'contacts', component: ContactsComponent },
   { path: 'employes', component: EmployesComponent },
   { path: 'index', component: IndexComponent },
+  { path: 'news', component: NewsCollectionComponent },
 ];
 
 // Deprecated provide

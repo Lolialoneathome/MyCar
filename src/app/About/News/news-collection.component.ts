@@ -1,25 +1,25 @@
 import { Component, OnInit  } from '@angular/core';
-import { SpecialItem  } from './SpecialItems/SpecialItem';
-import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
+import { NewsItem  } from './NewsItems/NewsItem';
+import { NewsItemService  } from './NewsItems/NewsItem.service';
 
 @Component({
-    selector: 'special-collection',
-    styleUrls: ['special-collection.component.css'],
+    selector: 'news-collection',
+    styleUrls: ['news-collection.component.css'],
     template: `
     <div class="jumbotron">
 
     </div>
       <div class="container combined-components">
-        <red-line-title [text]="'Специальные предложения'"></red-line-title>
-        <div style="padding: 15px" *ngFor="let special of specials">
+        <red-line-title [text]="'Новости'"></red-line-title>
+        <div style="padding: 15px" *ngFor="let new of news">
           <div class="row bordered" style="padding: 0px">
             <div class="col-md-3 col-xs-12  no-padding">
-              <img class="img-responsive pull-left-on-big pull-center-on-small" [src]=special.image alt="no icon"/>
+              <img class="img-responsive pull-left-on-big pull-center-on-small" [src]=new.image alt="no icon"/>
             </div>
             <div class="col-md-9 col-xs-12">
               <div class="pull-center-on-small">
-                <div class="header3" style="padding-top: 2%">{{special.title}}</div>
-                <div style="padding-top: 2%">{{special.description}} <span class='rouble'>a</span></div>
+                <div class="header3" style="padding-top: 2%">{{new.title}}</div>
+                <div style="padding-top: 2%">{{new.content}} <span class='rouble'>a</span></div>
                 <div class="input-group"style="padding-top: 5%">
                     <div class="media">
                      <div class="media-left media-top">
@@ -38,17 +38,17 @@ import { SpecialItemService  } from './SpecialItems/SpecialItem.service';
       </div>
       </div>
     `,
-    providers: [SpecialItemService]
+    providers: [NewsItemService]
 })
 
-export class SpecialCollectionComponent implements OnInit {
+export class NewsCollectionComponent implements OnInit {
 
-  specials: SpecialItem[];
+  news: NewsItem[];
 
-  constructor(private specialItemServie: SpecialItemService) { }
+  constructor(private newsItemServie: NewsItemService) { }
 
   getItems(): void {
-    this.specials = this.specialItemServie.Get();
+    this.news = this.newsItemServie.Get();
   }
 
   ngOnInit(): void {
