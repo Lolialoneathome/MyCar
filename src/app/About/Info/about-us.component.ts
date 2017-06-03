@@ -1,8 +1,12 @@
 import { Component  } from '@angular/core';
 
 @Component({
-    selector: 'fast-sell-component',
+    selector: 'about-us-component',
+    styleUrls: ['about-us.component.css'],
     template: `
+    <div class="jumbotron">
+
+    </div>
     <div class="container combined-components">
       <div class="row">
         <red-line-title [text]="'О компании'"></red-line-title>
@@ -28,26 +32,8 @@ import { Component  } from '@angular/core';
         <red-line-title [text]="'Преимущества MyCar'"></red-line-title>
       </div>
 
-      <div class="row">
-        <div class="combined-components gray-back">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <static-index-item-component  [title]="'Комфортная цена'" [text]="'Пример разного всякого текста'" [imagePathDisable]="'assets/images/comf_price.png'" >
-                </static-index-item-component>
-              </div>
-              <div class="col-md-4">
-                <static-index-item-component  [title]="'Гарантия качества'" [text]="'Пример разного всякого текста'" [imagePathDisable]="'assets/images/garantee.png'" >
-                </static-index-item-component>
-              </div>
-              <div class="col-md-4">
-                <static-index-item-component   [title]="'Безопасность'" [text]="'Пример разного всякого текста'" [imagePathDisable]="'assets/images/security.png'" >
-                </static-index-item-component>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      <static-index-item-collection>
+      </static-index-item-collection>
 
 
     </div>

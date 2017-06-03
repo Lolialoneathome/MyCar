@@ -1,0 +1,10 @@
+.jumbotron {
+background-image: url("../../../assets/images/emp_jum.png");
+background-size: cover;
+height: 100%;
+margin-bottom: 0;
+min-height: 500px;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+}

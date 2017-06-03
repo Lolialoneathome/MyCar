@@ -2,7 +2,11 @@ import { Component  } from '@angular/core';
 
 @Component({
     selector: 'fast-sell-component',
+        styleUrls: ['valuation.component.css'],
     template: `
+    <div class="jumbotron">
+
+    </div>
     <div class="container combined-components">
       <div class="row">
         <red-line-title [text]="'Оценка стоимости'"></red-line-title>

@@ -2,7 +2,11 @@ import { Component  } from '@angular/core';
 
 @Component({
     selector: 'fast-sell-component',
+    styleUrls: ['employess.component.css'],
     template: `
+    <div class="jumbotron">
+
+    </div>
     <div class="container combined-components">
       <div class="row">
         <red-line-title [text]="'Наши сотрудники'"></red-line-title>
@@ -17,19 +21,62 @@ import { Component  } from '@angular/core';
         Благодаря чему любой, даже самый сложный, запрос клиента выполняется максимально точно, быстро и качественно.</p>
       </div>
 
-      <div class="row">
-        <div class="col-md-6 text-center">
-          <p>Адрес:</p>
-          <p>614000, г. Пермь, </p>
-          <p>ул. Ленина, 127, оф. 4</p>
-        </div>
-        <div class="col-md-6 text-center">
-          <p>Телефон:</p>
-          <p>+ 7 000 00 00000</p>
-        </div>
+      <div class="row padding-top-25">
+          <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-1 text-center">
+            <img class="img-responsive center-block empty-car-img car-img padding-top-25" src="assets/images/dir.png" alt="no icon"/>
+            <p class="header3 padding-top-25" style="margin-bottom: 0px">Александр Ракитин</p>
+            <p>Директор MyCar – Пермь</p>
+            <ul class="list-inline" style="display: flex;justify-content: space-around;">
+                <li>
+                <div class="media" style="text-align: center; margin: auto;">
+                 <div class="media-left media-top" style="padding: 3px">
+                  <img src="assets/images/mob_phone_icon.png" alt="@l!" class="media-object"/>
+                  </div>
+                 <div class="media-body" style="width: auto; padding-left: 3px">
+                    <span class="media-heading product-button-text media-middle">+ 7 000 00 00000</span>
+                 </div>
+                </div>
+                </li>
+                <li style="vertical-align: middle">
+                  <div class="media" style="text-align: center; margin: auto;">
+                   <div class="media-left media-top" style="padding: 3px">
+                    <img src="assets/images/mail_icon.png" alt="@l!" class="media-object"/>
+                    </div>
+                   <div class="media-body" style="width: auto; padding-left: 3px">
+                      <span class="media-heading product-button-text media-middle">director@mycar.ru</span>
+                   </div>
+                 </div>
+               </li>
+            </ul>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-md-offset-1 text-center">
+            <img class="img-responsive center-block empty-car-img car-img padding-top-25" src="assets/images/fin_dir.png" alt="no icon"/>
+            <p class="header3 padding-top-25" style="margin-bottom: 0px">Владимир Соколов</p>
+            <p>Финансовый директор</p>
+            <ul class="list-inline" style="display: flex;justify-content: space-around;">
+                <li>
+                <div class="media" style="text-align: center; margin: auto;">
+                 <div class="media-left media-top" style="padding: 3px">
+                  <img src="assets/images/mob_phone_icon.png" alt="@l!" class="media-object"/>
+                  </div>
+                 <div class="media-body" style="width: auto; padding-left: 3px">
+                    <span class="media-heading product-button-text media-middle">+ 7 000 00 00000</span>
+                 </div>
+                </div>
+                </li>
+                <li style="vertical-align: middle">
+                  <div class="media" style="text-align: center; margin: auto;">
+                   <div class="media-left media-top" style="padding: 3px">
+                    <img src="assets/images/mail_icon.png" alt="@l!" class="media-object"/>
+                    </div>
+                   <div class="media-body" style="width: auto; padding-left: 3px">
+                      <span class="media-heading product-button-text media-middle">fin@mycar.ru</span>
+                   </div>
+                 </div>
+               </li>
+            </ul>
+          </div>
       </div>
-
-
     </div>
     `
 })
