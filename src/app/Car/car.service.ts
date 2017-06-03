@@ -12,4 +12,8 @@ export class CarService {
   getCtockedCars(): Car[]{
     return STOCKED_CARS;
   }
+
+  getTradeInEmptyCar() : Car {
+    return {image: 'assets/images/car1.png', price: '', name: '', description: ''}
+  }
 }

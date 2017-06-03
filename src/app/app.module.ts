@@ -27,6 +27,8 @@ import { ContactsComponent } from './About/Contacts/contacts.component';
 import { EmployesComponent } from './About/Employees/employes.component';
 
 import { TicketFormComponent } from './Ticket/ticket-form.component';
+import { TicketFormTradeinComponent } from './Ticket/ticket-form-tradein.component';
+
 
 import { routing } from './app.routes';
 
@@ -49,6 +51,7 @@ import { AppComponent } from './app.component';
     FastSellComponent,
     ComissionSellComponent,
     TicketFormComponent,
+    TicketFormTradeinComponent,
     TradeInComponent,
     ValuationComponent,
     AboutUsComponent,

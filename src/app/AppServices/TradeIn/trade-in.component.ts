@@ -1,8 +1,12 @@
-import { Component  } from '@angular/core';
+import { Component, OnInit  } from '@angular/core';
 
 @Component({
     selector: 'fast-sell-component',
+    styleUrls: ['trade-in.component.css'],
     template: `
+    <div class="jumbotron">
+
+    </div>
     <div class="container combined-components">
       <div class="row">
         <red-line-title [text]="'Обмен trade-in'"></red-line-title>
@@ -19,8 +23,8 @@ import { Component  } from '@angular/core';
       <div class="row" style="padding-top: 50px">
         <div class="header1 text-center">Обмен автомобиля</div>
       </div>
-      <ticket-form-component>
-      </ticket-form-component>
+      <ticket-form-tradein-component>
+      </ticket-form-tradein-component>
     </div>
     `
 })

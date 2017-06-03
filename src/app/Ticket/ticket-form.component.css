@@ -51,3 +51,57 @@ textarea {
   color: rgb(84, 84, 84);
   z-index: 1;
 }
+
+.product-name-text {
+	font-size: 16.569px;
+	font-family: "Open Sans";
+	color: rgb(84, 84, 84);
+	font-weight: bold;
+	line-height: 1.2;
+	padding : 2px;
+}
+
+.product-description {
+	padding : 10px;
+}
+
+.product-price-text {
+  font-size: 16.569px;
+  font-family: "Open Sans";
+  color: rgb(227, 30, 36);
+  line-height: 1.2;
+  padding : 2px;
+}
+
+.product-detailed {
+	font-size: 12px;
+	font-family: "Open Sans";
+	color: rgb(84, 84, 84);
+	line-height: 1.2;
+	text-align: left;
+	padding-top : 10px;
+	padding-bottom : 10px;
+}
+
+.product-button {
+	float: left;
+	padding: 15px;
+  border-left: 1px solid;
+}
+
+.product-button-text {
+	font-size: 14px;
+	font-family: "Open Sans";
+	color: rgb(84, 84, 84);
+	line-height: 1.2;
+	text-align: right;
+}
+
+.list-group-item {
+		border: none;
+}
+
+.empty-car-img {
+	background-color: #e7e7e7;
+  padding: 70px 120px;
+}
