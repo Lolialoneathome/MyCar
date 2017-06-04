@@ -32,8 +32,6 @@ import { NewsItemService  } from './NewsItems/NewsItem.service';
   							</div>
               </div>
             </div>
-          <div>
-          </div>
         </div>
       </div>
       </div>

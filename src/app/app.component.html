@@ -6,20 +6,28 @@
       <div class="container hideOnSmallScreen" >
         <div class="row">
           <nav class="navbar">
-            <div class="navbar-header">
+            <div class="navbar-header" style="calc(100% - 195px)">
               <a class="navbar-brand no-padding" [routerLink]="['/index']">
                 <span><img  class="logo-img" src="assets/images/logo.png"/></span>
-                <span class="header2 header-text" style="padding-left: 25px"> комфортный салон автомобилей с пробегом </span>
+                <span *ngIf="!isSearchEnable" class="header2 header-text" style="padding-left: 25px"> комфортный салон автомобилей с пробегом </span>
               </a>
             </div>
             <ul class="nav navbar-nav navbar-right border-right border-left">
               <li class="border-right">
-                <div class="search-but">
+                <div class="search-but" (click)="enableSearch()">
                   <img src="assets/images/search.png" alt="search icon"/>
                 </div>
             </li>
-              <li><p class="navbar-text"><a class="a-tel" href="tel:83422444422"> 8 (342) <span class="red-bold-text">244-44-22</span></a></p> </li>
+              <li><p class="navbar-text">8 (342) <span class="red-bold-text">244-44-22</span> </p></li>
             </ul>
+            <form *ngIf="isSearchEnable" class="navbar-form" style="margin: 0px">
+             <div class="form-group" style="display:inline;">
+               <div class="input-group" style="display:table;">
+                 <span class="input-group-addon" style="width:1%;height: 50px;"></span>
+                 <input (focusout)="enableSearch()" class="form-control" style="height: 50px;" name="search" placeholder="Найти автомобиль" autocomplete="off" autofocus="true" type="text">
+               </div>
+             </div>
+           </form>
           </nav>
         </div>
       </div>
@@ -53,10 +61,10 @@
             </ul>
           </nav>
 
-          <div id="top_navbar" class="nav-collapse navbar-collapse collapse" (focusout)="mouseLeaveDetailedNav('div A')">
+          <div style="padding-left: 52px;" id="top_navbar" class="nav-collapse navbar-collapse collapse" (focusout)="mouseLeaveDetailedNav('div A')">
             <ul data-toggle="collapse" data-target=".nav-collapse.in" class="nav navbar-nav nav-text collapsed-nav" style="cursor: pointer" (mouseenter) ="mouseEnterDetailedNav('div a') "  (mouseleave) ="mouseLeaveDetailedNav('div A')">
               <li data-toggle="collapse" data-target=".nav-collapse.in">
-                <a style="padding-right:60px" (mouseenter) ="mouseEnter('Buy') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
+                <a style="padding-right:71px" (mouseenter) ="mouseEnter('Buy') " (mouseleave) ="mouseLeave('div A')">Купить автомобиль</a>
                   <ul data-toggle="collapse" data-target=".nav-collapse.in" class="btn-group-vertical nav navbar-nav nav-text collapsed-nav" role="group" aria-label="..." *ngIf="isBuyVisible && (isNavDetailsShow || isNavDetailsHowered)">
                   <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/buy_special']"> Специальное предложения </a> </li>
                   <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/buy_stock']"> Автомобили в наличии </a> </li>
@@ -65,7 +73,7 @@
 
               </li>
             <li>
-              <a  style="padding-right:50px" (mouseenter) ="mouseEnter('Sell') " (mouseleave) ="mouseLeave('div A')"> Продать автомобиль </a>
+              <a  style="padding-right:100px" (mouseenter) ="mouseEnter('Sell') " (mouseleave) ="mouseLeave('div A')"> Продать автомобиль </a>
               <div *ngIf="isSellVisible && (isNavDetailsShow || isNavDetailsHowered)" >
                 <ul data-toggle="collapse" data-target=".nav-collapse.in" class="btn-group-vertical nav navbar-nav nav-text collapsed-nav" role="group" aria-label="...">
                 <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/sell_fast']"> Быстрая продажа </a> </li>
@@ -74,13 +82,13 @@
               </div>
             </li>
             <li>
-              <a style="padding-right:50px" (mouseenter) ="mouseEnter('Services') " (mouseleave) ="mouseLeave('div A')">Услуги</a>
-              <div *ngIf="isServicesVisible && (isNavDetailsShow || isNavDetailsHowered)" >
-                <ul data-toggle="collapse" data-target=".nav-collapse.in" class="btn-group-vertical nav navbar-nav nav-text collapsed-nav" role="group" aria-label="...">
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/tradein']"> Trade-In </a> </li>
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/valuation']"> Оценка стоимости </a> </li>
-                </ul>
-              </div>
+                <a style="padding-right: 100px;" (mouseenter) ="mouseEnter('Services') " (mouseleave) ="mouseLeave('div A')">Услуги</a>
+                <div *ngIf="isServicesVisible && (isNavDetailsShow || isNavDetailsHowered)" >
+                  <ul data-toggle="collapse" data-target=".nav-collapse.in" class="btn-group-vertical nav navbar-nav nav-text collapsed-nav" role="group" aria-label="...">
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/tradein']"> Trade-In </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/valuation']"> Оценка стоимости </a> </li>
+                  </ul>
+                </div>
             </li>
             <li >
               <a (mouseenter) ="mouseEnter('About') " (mouseleave) ="mouseLeave('About')">О компании</a>

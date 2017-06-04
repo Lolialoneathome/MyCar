@@ -8,8 +8,10 @@ import { Component, Input, OnInit  } from '@angular/core';
         <div class="centered-icons">
           <img class="img-responsive" [src]="imagePath" alt="no icon"/>
         </div>
+        <div class="padding-top-25">
         <p class="{{headerCssClass}}">{{title}}</p>
         <p>{{text}}</p>
+        </div>
       </div>
     `
 })

@@ -15,10 +15,13 @@ import { Component, Input, OnInit  } from '@angular/core';
           <!-- Wrapper for slides -->
           <div class="carousel-inner">
 
-             <div class="item active" style="background-image:url(assets/images/car2.png)">
+             <div class="item active" style="background-image:url(assets/images/slider1.png)">
              </div>
 
-             <div class="item" style="background-image:url(assets/images/car1.png)">
+             <div class="item" style="background-image:url(assets/images/slider2.png)">
+             </div>
+
+             <div class="item" style="background-image:url(assets/images/slider3.png)">
              </div>
 
           </div>
@@ -47,16 +50,6 @@ import { Component, Input, OnInit  } from '@angular/core';
           </div>
         </div>
 
-       <!--<div class="red">
-         <div class="red-content">
-           <div class="header1">TOYOTA CAMRY</div>
-           <div style="padding-top:25px; padding-bottom:25px">Весенние скидки до 100 000 рублей</div>
-           <div class="jum-button">
-             <p><a class="btn btn-primary btn-custom-red  btn-primary-custom-red" style="padding-right: 25px; padding-left: 25px;" href="#" role="button">Подробнее</a></p>
-           </div>
-         </div>
-       </div> -->
-
     </div>
     <!-- /.container.slide-wrapper -->
        <script type='text/javascript'>
@@ -74,19 +67,19 @@ import { Component, Input, OnInit  } from '@angular/core';
           <div class="header1 resp-text-center">on-line услуги</div>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
-          <online-service-component class="cursior-pointer" [routerLink]="['/buy_stock']" [text]="'Поиск автомобиля'" [imagePath]="'assets/images/search-auto-icon.png'">
+          <online-service-component class="cursior-pointer routerLink" [routerLink]="['/buy_stock']" [text]="'Поиск автомобиля'" [imagePath]="'assets/images/search-auto-icon.png'">
           </online-service-component>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
-        <online-service-component class="cursior-pointer" [routerLink]="['/valuation']" [text]="'Оценка автомобиля'" [imagePath]="'assets/images/rating-icon.png'">
+        <online-service-component class="cursior-pointer routerLink" [routerLink]="['/valuation']" [text]="'Оценка автомобиля'" [imagePath]="'assets/images/rating-icon.png'">
         </online-service-component>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
-        <online-service-component class="cursior-pointer" [routerLink]="['/tradein']" [text]="'Обмен автомобиля'" [imagePath]="'assets/images/swap-auto-icon.png'">
+        <online-service-component class="cursior-pointer routerLink" [routerLink]="['/tradein']" [text]="'Обмен автомобиля'" [imagePath]="'assets/images/swap-auto-icon.png'">
         </online-service-component>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 hide-border-on-small text-center ">
-        <online-service-component class="cursior-pointer" [text]="'Обратная связь'" [imagePath]="'assets/images/feedback-icon.png'">
+        <online-service-component class="cursior-pointer routerLink" [text]="'Обратная связь'" [imagePath]="'assets/images/feedback-icon.png'">
         </online-service-component>
         </div>
       </div>

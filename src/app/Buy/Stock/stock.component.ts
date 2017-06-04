@@ -41,7 +41,7 @@ declare var jQuery: any;
 
 					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
-							<select class="selectpicker form-control" multiple title="Марка">
+							<select class="selectpicker form-control" title="Марка">
 									<option>Mustard</option>
 									<option>Ketchup</option>
 									<option>Relish</option>
@@ -51,7 +51,7 @@ declare var jQuery: any;
 
 					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
-				      <select class="selectpicker form-control" multiple title="Модель">
+				      <select class="selectpicker form-control" title="Модель">
 									<option>Mustard</option>
 									<option>Ketchup</option>
 									<option>Relish</option>
@@ -61,40 +61,58 @@ declare var jQuery: any;
 
 					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
-				      <select class="selectpicker form-control" multiple title="Стоимость">
-									<option>Mustard</option>
-									<option>Ketchup</option>
-									<option>Relish</option>
+				      <select class="selectpicker form-control" title="Стоимость">
+									<option>до 500 000</option>
+									<option>500 000 - 1 000 000</option>
+									<option>1 000 000 - 1 500 000</option>
+                  <option>1 500 000 - 2 000 000</option>
+                  <option>от 2 000 000</option>
 							</select>
 				    </div>
 					</div>
 
 					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
-				      <select class="selectpicker form-control" multiple title="Год выпуска">
-									<option>Mustard</option>
-									<option>Ketchup</option>
-									<option>Relish</option>
+				      <select class="selectpicker form-control" data-size="5" data-dropup-auto="false" title="Год выпуска">
+									<option>2000</option>
+									<option>2001</option>
+									<option>2002</option>
+                  <option>2003</option>
+                  <option>2004</option>
+                  <option>2005</option>
+                  <option>2006</option>
+                  <option>2007</option>
+                  <option>2008</option>
+                  <option>2009</option>
+                  <option>2010</option>
+                  <option>2011</option>
+                  <option>2012</option>
+                  <option>2013</option>
+                  <option>2014</option>
+                  <option>2015</option>
+                  <option>2016</option>
+                  <option>2017</option>
 							</select>
 				    </div>
 					</div>
 
 					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
-				      <select class="selectpicker form-control" multiple title="Коробка передач">
-									<option>Mustard</option>
-									<option>Ketchup</option>
-									<option>Relish</option>
+				      <select class="selectpicker form-control" title="Коробка передач">
+									<option>АТ</option>
+									<option>МТ</option>
+									<option>Робот</option>
+                  <option>Вариатор</option>
 							</select>
 				    </div>
 					</div>
 
 					<div class="col-md-2 padding-left-0">
 						<div class="form-group">
-							<select class="selectpicker form-control" multiple title="Привод">
-									<option>Mustard</option>
-									<option>Ketchup</option>
-									<option>Relish</option>
+							<select class="selectpicker form-control" title="Привод">
+									<option>Передний</option>
+									<option>Задний</option>
+									<option>Полный</option>
 							</select>
 						</div>
 					</div>
