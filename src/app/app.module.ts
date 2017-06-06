@@ -30,6 +30,7 @@ import {NewsCollectionComponent} from './About/News/news-collection.component';
 import { TicketFormComponent } from './Ticket/ticket-form.component';
 import { TicketFormTradeinComponent } from './Ticket/ticket-form-tradein.component';
 
+import { SocialsComponent } from './Socials/socials.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { routing } from './app.routes';
 
@@ -58,7 +59,8 @@ import { AppComponent } from './app.component';
     AboutUsComponent,
     ContactsComponent,
     EmployesComponent,
-    NewsCollectionComponent
+    NewsCollectionComponent,
+    SocialsComponent
   ],
   imports: [
     BrowserModule,
