@@ -77,8 +77,10 @@
               <a  style="padding-right:100px" (mouseenter) ="mouseEnter('Sell') " (mouseleave) ="mouseLeave('div A')"> Продать автомобиль </a>
               <div *ngIf="isSellVisible && (isNavDetailsShow || isNavDetailsHowered)" >
                 <ul data-toggle="collapse" data-target=".nav-collapse.in" class="btn-group-vertical nav navbar-nav nav-text collapsed-nav" role="group" aria-label="...">
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/sell_fast']"> Быстрая продажа </a> </li>
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/sell_com']"> Комиссионная продажа </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/valuation']"> Оценка стоимости </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/sell_com']"> Комиссионная продажа </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/sell_fast']"> Быстрая продажа </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/tradein']"> Trade-In </a> </li>
                 </ul>
               </div>
             </li>
@@ -86,8 +88,7 @@
                 <a style="padding-right: 100px;" (mouseenter) ="mouseEnter('Services') " (mouseleave) ="mouseLeave('div A')">Услуги</a>
                 <div *ngIf="isServicesVisible && (isNavDetailsShow || isNavDetailsHowered)" >
                   <ul data-toggle="collapse" data-target=".nav-collapse.in" class="btn-group-vertical nav navbar-nav nav-text collapsed-nav" role="group" aria-label="...">
-                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/tradein']"> Trade-In </a> </li>
-                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/valuation']"> Оценка стоимости </a> </li>
+
                   </ul>
                 </div>
             </li>
@@ -95,11 +96,12 @@
               <a (mouseenter) ="mouseEnter('About') " (mouseleave) ="mouseLeave('About')">О компании</a>
               <div *ngIf="isAboutVisible && (isNavDetailsShow || isNavDetailsHowered)" >
                 <ul data-toggle="collapse" data-target=".nav-collapse.in" class="btn-group-vertical nav navbar-nav nav-text collapsed-nav" role="group" aria-label="...">
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/aboutus']"> История / О компании </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/employes']"> Наши сотрудники </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/news']"> Новости </a> </li>
+                  <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/contacts']"> Контакты </a> </li>
 
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/news']"> Новости </a> </li>
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/contacts']"> Контакты </a> </li>
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/employes']"> Наши сотрудники </a> </li>
-                <li class="btn-group btn-group-xs" role="group"> <a (click)="mouseLeaveDetailedNav('div A')" style="padding-top: 0px" [routerLink]="['/aboutus']"> О нас </a> </li>
+
                 </ul>
               </div>
             </li>
