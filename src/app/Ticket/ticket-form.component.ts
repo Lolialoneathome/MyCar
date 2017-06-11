@@ -63,7 +63,7 @@ declare var jQuery: any;
          <div class="col-md-8 text-center col-md-offset-2">
          <div class="media btn btn-gray" style="text-align: center; margin: auto;">
           <div class="media-left media-top" style="padding: 3px; border-right: 1px, solid, gray">
-           <img src="assets/images/photo_icon.png" alt="@l!" class="media-object"/>
+           <img src="assets/images/add_photo.svg" alt="@l!" class="media-object"/>
            </div>
           <div class="media-body" style="width: auto; padding-left: 10px">
              <span class="media-heading product-button-text media-middle">Добавить фото</span>

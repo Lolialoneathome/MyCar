@@ -67,19 +67,19 @@ import { Component, Input, OnInit  } from '@angular/core';
           <div class="header1 resp-text-center">on-line услуги</div>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
-          <online-service-component class="cursior-pointer routerLink" [routerLink]="['/buy_stock']" [text]="'Поиск автомобиля'" [imagePath]="'assets/images/search-auto-icon.png'">
+          <online-service-component class="cursior-pointer routerLink" [routerLink]="['/buy_stock']" [text]="'Поиск автомобиля'" [imagePath]="'assets/images/online-services/1_car_search.svg'">
           </online-service-component>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
-        <online-service-component class="cursior-pointer routerLink" [routerLink]="['/valuation']" [text]="'Оценка автомобиля'" [imagePath]="'assets/images/rating-icon.png'">
+        <online-service-component class="cursior-pointer routerLink" [routerLink]="['/valuation']" [text]="'Оценка автомобиля'" [imagePath]="'assets/images/online-services/2_car_evaluation.svg'">
         </online-service-component>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 border-right hide-border-on-small text-center ">
-        <online-service-component class="cursior-pointer routerLink" [routerLink]="['/tradein']" [text]="'Обмен автомобиля'" [imagePath]="'assets/images/swap-auto-icon.png'">
+        <online-service-component class="cursior-pointer routerLink" [routerLink]="['/tradein']" [text]="'Обмен автомобиля'" [imagePath]="'assets/images/online-services/3_trade_in.svg'">
         </online-service-component>
         </div>
         <div class="col-md-2 col-sm-6 col-xs-6 hide-border-on-small text-center ">
-        <online-service-component class="cursior-pointer routerLink" [text]="'Обратная связь'" [imagePath]="'assets/images/feedback-icon.png'">
+        <online-service-component class="cursior-pointer routerLink" [text]="'Обратная связь'" [imagePath]="'assets/images/online-services/4_feedback.svg'">
         </online-service-component>
         </div>
       </div>

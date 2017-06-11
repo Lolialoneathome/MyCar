@@ -30,7 +30,7 @@ import { Component  } from '@angular/core';
                 <li>
                 <div class="media" style="text-align: center; margin: auto;">
                  <div class="media-left media-top" style="padding: 3px">
-                  <img src="assets/images/mob_phone_icon.png" alt="@l!" class="media-object"/>
+                  <img src="assets/images/phone.svg" alt="@l!" class="media-object"/>
                   </div>
                  <div class="media-body" style="width: auto; padding-left: 3px">
                     <span class="media-heading product-button-text media-middle">+ 7 000 00 00000</span>
@@ -40,7 +40,7 @@ import { Component  } from '@angular/core';
                 <li style="vertical-align: middle">
                   <div class="media" style="text-align: center; margin: auto;">
                    <div class="media-left media-top" style="padding: 3px">
-                    <img src="assets/images/mail_icon.png" alt="@l!" class="media-object"/>
+                    <img src="assets/images/email.svg" alt="@l!" class="media-object"/>
                     </div>
                    <div class="media-body" style="width: auto; padding-left: 3px">
                       <span class="media-heading product-button-text media-middle">director@mycar.ru</span>
@@ -57,7 +57,7 @@ import { Component  } from '@angular/core';
                 <li>
                 <div class="media" style="text-align: center; margin: auto;">
                  <div class="media-left media-top" style="padding: 3px">
-                  <img src="assets/images/mob_phone_icon.png" alt="@l!" class="media-object"/>
+                  <img src="assets/images/phone.svg" alt="@l!" class="media-object"/>
                   </div>
                  <div class="media-body" style="width: auto; padding-left: 3px">
                     <span class="media-heading product-button-text media-middle">+ 7 000 00 00000</span>
@@ -67,7 +67,7 @@ import { Component  } from '@angular/core';
                 <li style="vertical-align: middle">
                   <div class="media" style="text-align: center; margin: auto;">
                    <div class="media-left media-top" style="padding: 3px">
-                    <img src="assets/images/mail_icon.png" alt="@l!" class="media-object"/>
+                    <img src="assets/images/email.svg" alt="@l!" class="media-object"/>
                     </div>
                    <div class="media-body" style="width: auto; padding-left: 3px">
                       <span class="media-heading product-button-text media-middle">fin@mycar.ru</span>
