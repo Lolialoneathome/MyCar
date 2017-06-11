@@ -17,6 +17,7 @@ import { AboutUsComponent } from './About/Info/about-us.component';
 import { ContactsComponent } from './About/Contacts/contacts.component';
 import { EmployesComponent } from './About/Employees/employes.component';
 import {NewsCollectionComponent} from './About/News/news-collection.component';
+import { FeedbackCollectionComponent } from './About/Feedback/feedback-collection.component';
 
 // Route Configuration
 export const routes: Routes = [
@@ -33,6 +34,7 @@ export const routes: Routes = [
   { path: 'employes', component: EmployesComponent },
   { path: 'index', component: IndexComponent },
   { path: 'news', component: NewsCollectionComponent },
+  { path: 'feedback', component: FeedbackCollectionComponent },
 ];
 
 // Deprecated provide
