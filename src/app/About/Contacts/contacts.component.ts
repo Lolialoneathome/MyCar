@@ -36,6 +36,12 @@ import { Component  } from '@angular/core';
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-md-12 text-center" style="padding-top: 25px;">
+          <socials-component></socials-component>
+        </div>
+      </div>
+
 
     </div>
     <div>
