@@ -4,7 +4,12 @@ import { Component  } from '@angular/core';
     selector: 'socials-component',
     styleUrls: ['socials.component.css'],
     template: `
-      <img class="img-responsive center-block" src="assets/images/soc.png" alt="line"/>
+      <div class="svg-container">
+        <img class="img-responsive center-block svg" src="assets/images/Soc/facebook.svg" alt="line"/>
+        <img class="img-responsive center-block svg" src="assets/images/Soc/inst.svg" alt="line"/>
+        <img class="img-responsive center-block svg" src="assets/images/Soc/vk.svg" alt="line"/>
+        <img class="img-responsive center-block svg" src="assets/images/Soc/youtube.svg" alt="line"/>
+      </div>
     `
 })
 

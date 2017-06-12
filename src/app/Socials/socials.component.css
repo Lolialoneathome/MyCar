@@ -1,0 +1,8 @@
+.svg-container{
+ display: inline-flex;
+ vertical-align: middle;
+}
+
+.svg {
+  padding: 5px;
+}

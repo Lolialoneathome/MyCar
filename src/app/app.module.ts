@@ -17,6 +17,8 @@ import { OnlineServiceComponent } from './Index/OnlineServices/online-service.co
 import { StaticIndexItemCollection } from './Index/StaticIndexItem/static-index-items-collection';
 import { StaticIndexItemComponent } from './Index/StaticIndexItem/static-index-item.component';
 import { RedLineTitleComponent } from './Titles/red-line-title.component';
+import { GrayLineComponent } from './GrayLine/grayline.component';
+
 import { BestSellersCollectionComponent } from './Index/BestSellers/best-sellers-collection.component';
 import { CommentCollectionComponent } from './Index/Comments/comments-collection.component';
 import { TradeInComponent } from './AppServices/TradeIn/trade-in.component';
@@ -62,7 +64,8 @@ import { AppComponent } from './app.component';
     EmployesComponent,
     NewsCollectionComponent,
     SocialsComponent,
-    FeedbackCollectionComponent
+    FeedbackCollectionComponent,
+    GrayLineComponent
   ],
   imports: [
     BrowserModule,

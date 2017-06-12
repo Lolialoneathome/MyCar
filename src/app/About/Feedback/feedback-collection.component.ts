@@ -4,7 +4,7 @@ import { CommentService  } from '../../Comments/comment.service';
 
 @Component({
     selector: 'feedback-collection',
-    //styleUrls: ['news-collection.component.css'],
+    styleUrls: ['feedback-collection.component.css'],
     template: `
     <div class="jumbotron">
 
@@ -26,7 +26,9 @@ import { CommentService  } from '../../Comments/comment.service';
                 <span class="header3">{{comment.title}}</span>
                 <p style="padding-top: 10px">{{comment.text}}</p>
               </div>
+              <gray-line> </gray-line>
             </div>
+
         </div>
       </div>
       </div>
